@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  width: 500px;
+  height: 800px;
+  margin-right: 100px;
+  border: 1px solid black;
+}
+.clock-calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.analog-clock {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+.calendar {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+footer {
+  text-align: center;
+}
