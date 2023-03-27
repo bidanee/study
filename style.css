@@ -26,10 +26,11 @@ h1 {
   position: relative;
   width: 350px;
   height: 350px;
-  background-color: white;
+  background-color: #fefbe9;
   border-radius: 50%;
   margin :40px auto;
-  border: 1px solid black;
+  border: 10px solid #e1eedd;
+  box-shadow: 0 0 1px 1px #e1e1e1;
 }
 .analog-clock::after {
   content: '';
@@ -59,18 +60,18 @@ h1 {
   --deg: 15;
   width: 6px;
   height: 110px;
-  background-color: black;
+  background-color: #183a1d;
 }
 .analog-clock > .hour {
   --deg: 30;
   width: 8px;
   height: 80px;
-  background-color: black;
+  background-color: #183a1d;
 }
 .analog-clock > .second {
   width: 4px;
   height: 130px;
-  background-color: red;
+  background-color: #f0a04b;
 }
 .analog-clock > .time {
   position: absolute;
@@ -80,6 +81,7 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  color: #183a1d;
 }
 .analog-clock > .time.time1 {
   transform: rotate(30deg);
