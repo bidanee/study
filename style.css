@@ -1,132 +1,40 @@
 * {
   box-sizing: border-box;
+} 
+.wrapper {
+  width: 1000px;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  "h h"
+  "n a"
+  "n f";
+  background-color: skyblue;
 }
-h1 {
+header { 
+  grid-area: h;
+  width: 1000px;
+  height: 20px;
+}
+nav {
+  grid-area: n;
+  width: 200px;
+  height: 500px;
+  background-color: antiquewhite;
+}
+article {
+  grid-area: a;
+  width: 500px;
+  height: 500px;
+  background-color: aliceblue;
+}
+
+
+.header {
   text-align: center;
 }
 
-.description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-
-}
-
-
-i::before {
-  align-items: center;
-  font-size: 30px;
-}
-
-.clock-calendar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-/* analogClock start */
-.analog-clock {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background-color: #fefbe9;
-  border-radius: 50%;
-  /* margin :40px 40px; */
-  border: 10px solid #e1eedd;
-  box-shadow: 0 0 1px 1px #e1e1e1;
-}
-.analog-clock::after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  border-radius: 50%;
-  z-index: 100;
-}
-.analog-clock > .hand {
-  --deg: 0;
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  border: 1px solid white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transform-origin: bottom;
-  transform: translate3d(-50%, 0, 0) rotate(calc(var(--deg) * 1deg));
-  z-index: 10;
-}
-.analog-clock > .minute {
-  --deg: 15;
-  width: 6px;
-  height: 110px;
-  background-color: #183a1d;
-}
-.analog-clock > .hour {
-  --deg: 30;
-  width: 8px;
-  height: 80px;
-  background-color: #183a1d;
-}
-.analog-clock > .second {
-  width: 4px;
-  height: 130px;
-  background-color: #f0a04b;
-}
-.analog-clock > .time {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #183a1d;
-}
-.analog-clock > .time.time1 {
-  transform: rotate(30deg);
-}
-.analog-clock > .time.time2 {
-  transform: rotate(60deg);
-}
-.analog-clock > .time.time3 {
-  transform: rotate(90deg);
-}
-.analog-clock > .time.time4 {
-  transform: rotate(120deg);
-}
-.analog-clock > .time.time5 {
-  transform: rotate(150deg);
-}
-.analog-clock > .time.time6 {
-  transform: rotate(180deg);
-}
-.analog-clock > .time.time7 {
-  transform: rotate(210deg);
-}
-.analog-clock > .time.time8 {
-  transform: rotate(240deg);
-}
-.analog-clock > .time.time9 {
-  transform: rotate(270deg);
-}
-.analog-clock > .time.time10 {
-  transform: rotate(300deg);
-}
-.analog-clock > .time.time11 {
-  transform: rotate(330deg);
-}
-/* analogClock end */
-.calendar {
-  width: 350px;
-  height: 350px;
-  border: 1px solid black;
-  /* margin-top: 50px; */
-}
 footer {
   text-align: center;
+ grid-area: f;
 }
